@@ -8,8 +8,8 @@ export class ImageGalleryItem extends Component {
   render() {
     const { tags, webformatURL } = this.props.item;
     return (
-      <li>
-        <img src={webformatURL} alt={tags} />
+      <li onClick={this.handleImgToken} className="ImageGalleryItem">
+        <img className="ImageGalleryItem-image" src={webformatURL} alt={tags} />
       </li>
     );
   }

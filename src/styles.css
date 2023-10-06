@@ -204,4 +204,7 @@ img {
 .Button:hover,
 .Button:focus {
   background-color: #303f9f;
+  margin-right: auto;
+  margin-left: auto;
 }
+
