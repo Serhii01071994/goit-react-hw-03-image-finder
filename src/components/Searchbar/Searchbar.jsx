@@ -22,7 +22,6 @@ export class Searchbar extends Component {
           <button className="searchFormButton" type="submit">
             <span className="searchFormButtonLabel">Search</span>
           </button>
-
           <input
             className="SearchForm-input"
             name="searchImg"
