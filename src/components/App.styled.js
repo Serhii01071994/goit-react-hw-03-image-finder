@@ -38,7 +38,7 @@ export const StyledAppContainer = styled.div`
 .searchFormButton{
   display: inline-block;
   width: 48px;
-  height: 48px;
+  height: 35px;
   border: 0;
   background-image: url('https://w7.pngwing.com/pngs/843/729/png-transparent-computer-icons-magnifying-glass-glass-glass-advertising-svg-thumbnail.png');
   background-size: 40%;
@@ -70,7 +70,7 @@ export const StyledAppContainer = styled.div`
   display: inline-block;
   width: 100%;
   font: inherit;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   outline: none;
   padding-left: 4px;
@@ -79,7 +79,12 @@ export const StyledAppContainer = styled.div`
 
 .SearchForm-input::placeholder {
   font: inherit;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+.loader{
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .ImageGallery {

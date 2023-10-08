@@ -3,10 +3,11 @@ import { StyledAppContainer } from './App.styled';
 import { fetchPhoto } from 'servises/api';
 
 import { Searchbar } from './Searchbar/Searchbar';
+import { Loader } from './Loader/Loader';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { LoadMoreButton } from './LoadMoreButton/LoadMoreButton';
-import Notiflix from 'notiflix';
 import Modal from './Modal/Modal';
+import Notiflix from 'notiflix';
 
 export class App extends Component {
   state = {
@@ -113,11 +114,7 @@ export class App extends Component {
     return (
       <StyledAppContainer>
         <Searchbar handleSearch={this.handleSearch} />
-        {isLoading && (
-          <div>
-            <p>Loading..</p>
-          </div>
-        )}
+        {isLoading && <Loader />}
         {showPhotos && (
           <div>
             <ImageGallery items={items} onOpenModal={this.onOpenModal} />
